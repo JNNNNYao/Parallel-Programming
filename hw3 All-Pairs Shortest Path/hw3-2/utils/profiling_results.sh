@@ -1,0 +1,2 @@
+srun -p prof -N1 -n1 --gres=gpu:1 nvprof --kernels cal_phase3 --metrics achieved_occupancy,sm_efficiency,shared_load_throughput,shared_store_throughput,gld_throughput,gst_throughput ./hw3-2 /home/pp21/share/hw3-2/cases/p15k1 p15k1.out 
+rm *.out
